@@ -28,5 +28,5 @@
 
 ![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\$%29AAWRRZXMD[}6GJKH231XI.png)
 
-登录chuna\_a用户，在菜单 会计中已经有了收付款功能，点击创建收付时，会提示没有
+登录chuna\_a用户，在菜单 会计中已经有了会计菜单，但还没有收付款菜单，这是因为我们还没有添加收付款菜单的访问权限，下一步我们将添加对应的访问权限。
 
