@@ -24,5 +24,9 @@
 
 由于创建收付款属于会计功能，在应用程序选择会计，名称为 出纳。在菜单选项卡中我们分别添加以下菜单
 
-![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\HQ]44W2GF_[TEH~{}~I[O5V.png)保存后我们将chuna\_a加入出纳用户组。登录chuna\_a用户，在菜单 会计中已经有了收付款功能，点击创建收付时，会提示没有
+![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\HQ]44W2GF_[TEH~{}~I[O5V.png)保存后我们将chuna\_a加入出纳用户组。
+
+
+
+登录chuna\_a用户，在菜单 会计中已经有了收付款功能，点击创建收付时，会提示没有
 
