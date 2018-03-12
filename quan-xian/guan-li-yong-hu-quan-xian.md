@@ -26,7 +26,7 @@
 
 ![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\HQ]44W2GF_[TEH~{}~I[O5V.png)保存后我们将chuna\_a加入出纳用户组。
 
-
+![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\$%29AAWRRZXMD[}6GJKH231XI.png)
 
 登录chuna\_a用户，在菜单 会计中已经有了收付款功能，点击创建收付时，会提示没有
 
