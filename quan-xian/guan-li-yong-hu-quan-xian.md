@@ -4,7 +4,7 @@
 
 > 在系统中我们添加一个出纳用户A 使之具有对销售和采购的收付款功能。
 
-![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\}`DG3DVT2`MFP4]TICYO~4U.png)
+![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\}L%28~9ONRYQ`US3Y%29$7E5{EJ.png)
 
 > 在应用程序中我们去除所有的应用模块，稍后我们将增加自定义的权限菜单
 
@@ -17,6 +17,10 @@
 > Odoo安装完成后，默认用户组管理功能是不可见的，我们需激活开发模式方可进行管理;在 设置-&gt;激活开发者模式 激活开发模式
 
 ![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\~I1O2FMQ18DQP$RYONU5JF5.png)
+
+### 添加出纳用户组
+
+> 激活开发模式，我们可以在设置用户菜单下看到群组功能
 
 
 
