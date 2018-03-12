@@ -32,5 +32,9 @@
 
 ### 2.2 为菜单添加访问权限
 
+> 添加访问权限时，我们需查询对应菜单视图模型代码。进入会计-&gt;销售
+
+![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\XLD[9P40J3Y]4_V5{9GCDA0.png)
+
 
 
