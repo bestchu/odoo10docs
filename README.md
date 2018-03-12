@@ -1,4 +1,4 @@
-# Odoo历史
+# 1.1 Odoo历史
 
 Odoo10 的前身是“Tiny ERP”，最初是由比利时的 Fabien Pinckaers 创建的。
 
