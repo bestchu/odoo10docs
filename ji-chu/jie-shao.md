@@ -1,7 +1,5 @@
 # Odoo介绍
 
-<<<<<<< HEAD
-=======
 odoo官网 ：[http://www.odoo.com](http://www.odoo.com/)
 
 应用商店： [https://www.odoo.com/apps](https://www.odoo.com/apps)
@@ -11,7 +9,6 @@ odoo官网 ：[http://www.odoo.com](http://www.odoo.com/)
 * 模块化设计的开源企业应用框架
 * 全求合作的生态系统
 
->>>>>>> eefa62857063b02bfd9acea049ff7953cd4cd173
 # Odoo能做什么
 
 ## web站点应用
@@ -48,11 +45,7 @@ odoo官网 ：[http://www.odoo.com](http://www.odoo.com/)
 
 * 费用
 
-<<<<<<< HEAD
-## 操作应用
-=======
 ## 库存应用
->>>>>>> eefa62857063b02bfd9acea049ff7953cd4cd173
 
 * 库存
 
@@ -122,8 +115,6 @@ odoo官网 ：[http://www.odoo.com](http://www.odoo.com/)
 
 12. 游览\(web\_tour\)
 
-<<<<<<< HEAD
-=======
 # 社区版和企业版
 
 从9.0开始区分企业版和社区版
@@ -137,6 +128,5 @@ odoo官网 ：[http://www.odoo.com](http://www.odoo.com/)
 
 
 
->>>>>>> eefa62857063b02bfd9acea049ff7953cd4cd173
 
 
