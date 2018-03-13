@@ -1,5 +1,14 @@
 # Odoo介绍
 
+odoo官网 ：[http://www.odoo.com](http://www.odoo.com/)
+
+应用商店： [https://www.odoo.com/apps](https://www.odoo.com/apps)
+
+* 是以ERP为核心，包括企业方方面面的可扩展的企业应用平台
+* 丰富的企业应用集成库
+* 模块化设计的开源企业应用框架
+* 全求合作的生态系统
+
 # Odoo能做什么
 
 ## web站点应用
@@ -36,7 +45,7 @@
 
 * 费用
 
-## 操作应用
+## 库存应用
 
 * 库存
 
