@@ -12,11 +12,63 @@ odoo10只支持python2，我们先安装python2，到[https://www.python.org/](h
 $ python get-pip.py
 ```
 
-> 注意系统中有多个版本的python是一定要选择好path环境，set path=
+> 注意系统中有多个版本的python是一定要设置path环境变量，set path=D:\python\Python27；D:\python\Python27\Scripts；%path%在执行。
 
-安装虚拟环境，安装python是一般都会安装pip包管理工具，如果没有pip管理工具请继续往下看，使用 ```pip install ``
+为了避免包冲突，一般推荐使用虚拟环境，虚拟环境使用如下命令安装
+
+```
+$ pip install virtualenv
+```
+
+创建虚拟按环境：
+
+```
+virtualenv --no-site-packages venv -p D:\python\Python27\python.exe
+```
+
+激活虚拟按环境：
+
+```
+$ source venv/bin/activate
+```
+
+windows下使用：
+
+```
+ven/Script/activate.bat
+```
+
+之后就可以使用pip进行安装依赖。
 
 # 2.安装依赖
 
-源代码中有一个文件\`[requirements.txt](https://github.com/odoo/odoo/blob/11.0/requirements.txt)``可以使用`pip install -r``[requirements.tx](https://github.com/odoo/odoo/blob/11.0/requirements.txt)\`
+odoo依赖很多，在源代码中有一个文件`requirements.txt`  可以使用 `$ pip install -r requirements.txt`  命令进行安装，遗憾的是有的包需要编译和不支持pip安装，所有需要特殊处理，经过测试，一下包需要单独下载安装：
+
+> python-ldap
+
+需要编译的包在windows下比较困难，好在  网上有很多编译好的包，安装失败的包可以下载后使用 `$ pip install *.whl` 进行安装。
+
+还有一个包是将html转为pdf的工具 `wkhtmltox`，需要单独安装，其次是windows下需要安装 pywin32 ,pywin32可以直接到 [https://sourceforge.net/projects/pywin32/](https://sourceforge.net/projects/pywin32/) 网上下载响应版本进行安装，选择32位64位不是依据操作系统，而是python解释器的版本，不过最近pywin32也支持pip 安装，但是需要修改  `requirements.txt`文件，`pypiwin32 ; sys_platform == 'win32'`
+
+之后修改 `requirements.txt`文件，将手动安装的包注释，在执行`$ pip install -r requirements.txt`
+
+命令完成安装。
+
+## 3. 运行odoo服务
+
+使用odoo-bin进行运行
+
+–xmlrpc-port=8888 
+
+–addons-path=addons
+
+–db\_user
+
+–database
+
+–db\_password
+
+
+
+
 
