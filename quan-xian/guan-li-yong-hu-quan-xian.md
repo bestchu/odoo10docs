@@ -4,11 +4,11 @@
 
 > 在系统中我们添加一个出纳用户A 使之具有对销售和采购的收付款功能。
 
-![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\}L%28~9ONRYQ`US3Y%29$7E5{EJ.png)
+![](/assets/}L%28~9ONRYQ`US3Y%29$7E5{EJ.png)
 
 > 在应用程序中我们去除所有的应用模块，稍后我们将增加自定义的权限菜单
 
-![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\H]WDDG}F1P_5W8O49}5F99B.png)
+![](/assets/H]WDDG}F1P_5W8O49}5F99B.png)
 
 > 点击更改密码，在新密码处点击 输入新密码 以便我们登录该用户。
 
