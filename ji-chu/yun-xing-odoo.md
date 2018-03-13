@@ -46,7 +46,11 @@ odoo依赖很多，在源代码中有一个文件`requirements.txt`  可以使�
 
 > python-ldap
 
+<<<<<<< HEAD
 需要编译的包在windows下比较困难，好在  网上有很多编译好的包，安装失败的包可以下载后使用 `$ pip install *.whl` 进行安装。
+=======
+需要编译的包在windows下比较困难，好在 [https://www.lfd.uci.edu/~gohlke/pythonlibs/](https://www.lfd.uci.edu/~gohlke/pythonlibs/) 网上有很多编译好的包，安装失败的包可以下载后使用 `$ pip install *.whl` 进行安装。
+>>>>>>> eefa62857063b02bfd9acea049ff7953cd4cd173
 
 还有一个包是将html转为pdf的工具 `wkhtmltox`，需要单独安装，其次是windows下需要安装 pywin32 ,pywin32可以直接到 [https://sourceforge.net/projects/pywin32/](https://sourceforge.net/projects/pywin32/) 网上下载响应版本进行安装，选择32位64位不是依据操作系统，而是python解释器的版本，不过最近pywin32也支持pip 安装，但是需要修改  `requirements.txt`文件，`pypiwin32 ; sys_platform == 'win32'`
 
@@ -58,7 +62,11 @@ odoo依赖很多，在源代码中有一个文件`requirements.txt`  可以使�
 
 使用odoo-bin进行运行
 
+<<<<<<< HEAD
 –xmlrpc-port=8888 
+=======
+–xmlrpc-port=8888
+>>>>>>> eefa62857063b02bfd9acea049ff7953cd4cd173
 
 –addons-path=addons
 
@@ -68,7 +76,10 @@ odoo依赖很多，在源代码中有一个文件`requirements.txt`  可以使�
 
 –db\_password
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> eefa62857063b02bfd9acea049ff7953cd4cd173
