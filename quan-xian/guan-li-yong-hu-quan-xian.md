@@ -24,9 +24,9 @@
 
 由于创建收付款属于会计功能，在应用程序选择会计，名称为 出纳。在菜单选项卡中我们分别添加以下菜单
 
-![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\HQ]44W2GF_[TEH~{}~I[O5V.png)保存后我们将chuna\_a加入出纳用户组。
+![](/assets/HQ]44W2GF_[TEH~{}~I[O5V.png)保存后我们将chuna\_a加入出纳用户组。
 
-![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\$%29AAWRRZXMD[}6GJKH231XI.png)
+![](/assets/$%29AAWRRZXMD[}6GJKH231XI.png)
 
 登录chuna\_a用户，在菜单 会计中已经有了会计菜单，但还没有收付款菜单，这是因为我们还没有添加收付款菜单的访问权限，下一步我们将添加对应的访问权限。
 
@@ -34,7 +34,7 @@
 
 > 添加访问权限时，我们需查询对应菜单视图模型代码。进入会计-&gt;销售 点击调试中的`编辑搜索视图` 复制其中的`模型`代码。
 
-![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\XLD[9P40J3Y]4_V5{9GCDA0.png)
+![](/assets/XLD[9P40J3Y]4_V5{9GCDA0.png)
 
 ![](/assets/import0313.png)编辑`群组` 会计及财务 / 出纳 在选项卡访问权限 点击`添加项目`_对象名及名称为刚才模型代码 ,分别将4个权限勾选上。保存后我们就能在chuna\_a的菜单中看到收付款菜单了。_
 
