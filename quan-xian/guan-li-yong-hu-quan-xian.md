@@ -16,7 +16,7 @@
 
 > Odoo安装完成后，默认用户组管理功能是不可见的，我们需激活开发模式方可进行管理;在 设置-&gt;激活开发者模式 激活开发模式
 
-![](file:///C:\Users\xc\AppData\Roaming\Tencent\Users\419412545\QQ\WinTemp\RichOle\~I1O2FMQ18DQP$RYONU5JF5.png)
+![](/assets/~I1O2FMQ18DQP$RYONU5JF5.png)
 
 ### 2.1 添加出纳用户组
 
