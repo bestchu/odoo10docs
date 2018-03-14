@@ -8,7 +8,7 @@
 * [权限](quan-xian.md)
   * [管理用户权限](quan-xian/guan-li-yong-hu-quan-xian.md)
   * [权限相关知识](quan-xian/quan-xian-xiang-guan-zhi-shi.md)
-  * Domain 表达式
+  * [Domain 表达式](quan-xian/domain-biao-da-shi.md)
 * [会计](hui-ji.md)
   * [介绍](jie-shao.md)
 
