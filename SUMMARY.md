@@ -11,4 +11,6 @@
   * [Domain 表达式](quan-xian/domain-biao-da-shi.md)
 * [会计](hui-ji.md)
   * [介绍](jie-shao.md)
+* [库存](ku-cun.md)
+  * [仓库管理的基本概念和引导](ku-cun/cang-ku-guan-li-yin-dao.md)
 
