@@ -10,7 +10,7 @@
   * [权限相关知识](quan-xian/quan-xian-xiang-guan-zhi-shi.md)
   * [Domain 表达式](quan-xian/domain-biao-da-shi.md)
 * [会计](hui-ji.md)
-  * [介绍](jie-shao.md)
+  * [会计基础](hui-ji-ji-chu.md)
 * [库存](ku-cun.md)
   * [仓库管理的基本概念和引导](ku-cun/cang-ku-guan-li-yin-dao.md)
   * [仓库管理系统（WMS）](ku-cun/cang-ku-guan-li-xi-tong-ff08-wms.md)
