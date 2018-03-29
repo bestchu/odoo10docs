@@ -15,5 +15,6 @@
 * [二次开发](er-ci-kai-fa.md)
   * [基础](er-ci-kai-fa/ji-chu.md)
 * [会计](hui-ji.md)
-  * 基础
+  * [基础](hui-ji/ji-chu.md)
+  * [会计知识](hui-ji/hui-ji-zhi-shi.md)
 
