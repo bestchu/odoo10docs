@@ -1,6 +1,6 @@
 ## 1. 下载源代码
 
-odoo源代码托管在github上，包括了从5开始的各个版本，目前最新版本是odoo11，但是据测试odoo11还不太稳定，但是开始尝试性地支持`ppython3` 了，可以预见odoo支持`python3` 应该也不远了，odoo12应该在2018年10月份左右发布，本书使用odoo的稳定版10。同时 [https://nightly.odoo.com](https://nightly.odoo.com) 也提供构建，但是我测试时遇到问题，推荐使用[https://www.gitbook.com/book/bestchu/odoo10](https://www.gitbook.com/book/bestchu/odoo10)下载源代码进行构建。
+odoo源代码托管在github上，包括了从5开始的各个版本，目前最新版本是odoo11，但是据测试odoo11还不太稳定，但是开始尝试性地支持`ppython3` 了，可以预见odoo支持`python3` 应该也不远了，odoo12应该在2018年10月份左右发布，本书使用odoo的稳定版10。同时 [https://nightly.odoo.com](https://nightly.odoo.com) 也提供构建，但是我测试时遇到问题，推荐使用[https://github.com/odoo/odoo](https://github.com/odoo/odoo)下载源代码进行构建。也可以使用git获取完全源代码`$ git clone https://github.com/odoo/odoo.git`
 
 ## 2. python环境
 
@@ -42,9 +42,9 @@ ven/Script/activate.bat
 
 # 2.安装依赖
 
-odoo依赖很多，在源代码中有一个文件`requirements.txt`  可以使用 `$ pip install -r requirements.txt`  命令进行安装，遗憾的是有的包需要编译和不支持pip安装，所有需要特殊处理，经过测试，一下包需要单独下载安装：
+odoo依赖很多，在源代码中有一个文件`requirements.txt`  可以使用 `$ pip install -r requirements.txt`  命令进行安装，遗憾的是有的包需要编译和不支持pip安装，所以需要特殊处理，经过测试，以下包需要单独下载安装：
 
-> python-ldap
+> python-ldap，pwin32 wkhtml2pdf
 
 需要编译的包在windows下比较困难，好在 [https://www.lfd.uci.edu/~gohlke/pythonlibs/](https://www.lfd.uci.edu/~gohlke/pythonlibs/) 网上有很多编译好的包，安装失败的包可以下载后使用 `$ pip install *.whl` 进行安装。
 
@@ -54,17 +54,30 @@ odoo依赖很多，在源代码中有一个文件`requirements.txt`  可以使�
 
 命令完成安装。
 
-## 3. 运行odoo服务
+## 3.nodejs依赖
 
-使用odoo-bin进行运行
+下载nodejs安装
 
-–xmlrpc-port=8888
+安装less`$ npm install -g less`
 
-–addons-path=addons
+## 4. 运行odoo服务
 
-–db\_user
+` python odoo-bin -w odoo -r odoo --addons-path=addons,../mymodules --db-filter=mydb$`
 
-–database
+使用浏览器进行访问，默认端口为8069
 
-–db\_password
+linux系统下安装,以debian为例
 
+debian默然安装python2.7,
+
+安装pip工具
+
+安装virtualenv
+
+安装系统依赖
+
+```
+sudo apt-get install libxml2-dev libxslt-dev python-dev libldap2-dev libsasl2-dev
+```
+
+安装python依赖
