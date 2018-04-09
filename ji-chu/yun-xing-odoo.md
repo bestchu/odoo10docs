@@ -66,18 +66,160 @@ odoo依赖很多，在源代码中有一个文件`requirements.txt`  可以使�
 
 使用浏览器进行访问，默认端口为8069
 
-linux系统下安装,以debian为例
+# linux下安装odoo10
 
-debian默然安装python2.7,
+> linux系统下安装,以debian为例
+>
+> debian默然安装python2.7,
+>
+> 安装pip工具
+>
+> 安装virtualenv
 
-安装pip工具
+1. 创建odoo用户
+  ```bash
+  sudo adduser odoo
+  ```
 
-安装virtualenv
+2. 刷新系统
+  ```bash
+  sudo apt update && sudo apt upgrade -y
+  ```
 
-安装系统依赖
+3. 安装系统依赖
 
-```
-sudo apt-get install libxml2-dev libxslt-dev python-dev libldap2-dev libsasl2-dev
-```
+    ```bash
+    sudo apt-get install libxml2-dev libxslt-dev python-dev libldap2-dev libsasl2-dev
+    ```
 
-安装python依赖
+4. 安装nodeJs,less
+
+    ```bash
+    sudo apt-get install -y npm
+    sudo ln -s /usr/bin/nodejs /usr/bin/node
+    sudo npm install -g less
+    ```
+
+5. 安装依赖包
+    ```bash
+    sudo apt-get install -y python3-pip
+    sudo pip3 install Babel decorator docutils ebaysdk feedparser gevent greenlet html2text Jinja2 lxml Mako MarkupSafe mock num2words ofxparse passlib Pillow psutil psycogreen psycopg2 pydot pyparsing PyPDF2 pyserial python-dateutil python-openid pytz pyusb PyYAML qrcode reportlab requests six suds-jurko vatnumber vobject Werkzeug XlsxWriter xlwt xlrd
+    ```
+
+6. 安装数据库
+
+    ```bash
+    sudo apt-get install -y postgresql
+    ```
+
+7. 给数据库建个odoo账号让odoo源码运行的时候有权限对数据库进行读写操作
+
+    ```bash
+    sudo su - postgres
+    createuser --createdb --username postgres --no-createrole --no-superuser --pwprompt odoo
+    ```
+
+8. 获取odoo10源码
+
+    ```bash
+    git clone https://www.github.com/odoo/odoo --branch 10.0 --depth 1 --single-branch ./odoo10
+    ```
+
+9. 源码运行odoo10生成一个配置文件
+
+    ```bash
+    cd ~/odoo10
+    ./odoo-bin -s
+    ```
+
+10. 设置配置文件
+
+    ```bash
+    sudo mkdir /etc/odoo
+    sudo cp /home/odoo/.odoorc /etc/odoo/odoo.conf
+    sudo chown -R odoo /etc/odoo
+    ```
+
+    ​
+
+11. 设置odoo日志
+
+     ```bash
+     sudo mkdir /var/log/odoo
+     sudo chown odoo /var/log/odoo
+     ```
+
+     ​
+
+12. 修改odoo配置
+
+     `sudo vi /etc/odoo/odoo.conf`
+
+     ```ini
+     [options]
+     logfile = /var/log/odoo/odoo.log
+     logrotate = True
+     ```
+
+     ​
+
+13. 安装中文字体
+
+     ```bash
+     sudo apt-get install ttf-wqy-zenhei -y
+     sudo apt-get install ttf-wqy-microhei -y
+     ```
+
+     ​
+
+14. 安装报表所需wkhtmltopdf
+
+     ```bash
+     wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
+     ```
+
+     ```bash
+     sudo dpkg -i wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
+     sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin
+     sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin
+     ```
+
+     ​
+
+15. 让odoo随系统自动启动
+
+     `sudo vi /lib/systemd/system/odoo.service`
+
+     内容如下：
+
+     ```ini
+     [Unit]
+     Description=Odoo
+     After=postgresql.service
+     [Service]
+     Type=simple
+     User=odoo
+     Group=odoo
+     ExecStart=/home/odoo/odoo10/odoo-bin -c /etc/odoo/odoo.conf
+     [Install]
+     WantedBy=multi-user.target
+     ```
+
+     ​
+
+16. 注册为系统服务
+
+     ```bash
+     sudo systemctl enable odoo.service
+     ```
+
+     ​
+
+17. 启动服务
+
+     ```bash
+     sudo systemctl start odoo
+     ```
+
+     ​
+

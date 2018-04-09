@@ -5,6 +5,7 @@
 * [基础](ji-chu.md)
   * [介绍](ji-chu/jie-shao.md)
   * [运行odoo](ji-chu/yun-xing-odoo.md)
+  * [Odoo10配置文件详解](ji-chu/odoo10-config.md)
 * [权限](quan-xian.md)
   * [管理用户权限](quan-xian/guan-li-yong-hu-quan-xian.md)
   * [权限相关知识](quan-xian/quan-xian-xiang-guan-zhi-shi.md)
