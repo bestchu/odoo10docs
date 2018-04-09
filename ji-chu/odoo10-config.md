@@ -1,4 +1,4 @@
-## Odoo10配置文件详情
+## Odoo10配置文件详解
 
 ```ini
 [options]  
