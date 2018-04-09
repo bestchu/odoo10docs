@@ -1,14 +1,8 @@
-# 1.1 Odoo历史
+# Odoo10实施及二次开发笔记
 
-Odoo10 的前身是“Tiny ERP”，最初是由比利时的 Fabien Pinckaers 创建的。
 
-![](/assets/import1.png)
 
-到 2009 年的时候，发布第 5 版，公司获得风投，盈利增长迅速，软件更名为 Open-ERP。OpenERP 这个名字最为人们熟知，当时软件已经包含几百个模块了，从财务管理、采购/销售管理、库存管理到人力资源管理、销售点管理、项目管理等等都有。当时可能某些模块的功能已经开始超过传统意义上的 ERP（Enterprise Resource Planning，企业资源规划）的定义了（不过最新的 ERPⅡ 定义则更广泛，下面会有详细的讨论）。
-
-而在 2014 年 9 月，软件发布第 8 版，在之前版本逐渐优化的 web client 这一块的基础上，进行了大范围的功能加强。比如有了 Website builder 模块，可以方便公司快速架构出自己的网站；e-commerce 模块方便公司快速搭建销售平台；还有 business intelligence这个模块，可以辅助生成高质量的说明演示用的图形等等。这使得 OpenERP 这个名字已经不能很好地说明这个软件的雄心壮志了，于是软件更名为 Odoo 这个名字了，目前最新的版本是 Odoo11。
-
-可以看得出来目前该软件的开发方向就是基于 web client/server 模型，将公司内部所涉及到的所有的信息流都整合起来，其不仅包括具体实施层面，也包括分析决策层面。可以预见不久的将来 Odoo 开发将快速为公司构建出这样一个生态圈:
-
-![](/assets/import2.png)
+- 该笔记由航天通联同事共同维护。
+- 采用Markdown格式编写，托管在gitbook仓库上。
+- [gitbook在线查看](https://bestchu.gitbooks.io/odoo10/content/)
 
