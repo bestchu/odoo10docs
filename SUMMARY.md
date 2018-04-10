@@ -12,6 +12,7 @@
 * [库存](ku-cun.md)
   * [仓库管理的基本概念和引导](ku-cun/cang-ku-guan-li-yin-dao.md)
   * [仓库管理系统（WMS）](ku-cun/cang-ku-guan-li-xi-tong-ff08-wms.md)
+  * [存货核算问题](ku-cun/cun-huo-he-suan-wen-ti.md)
 * [二次开发](er-ci-kai-fa.md)
   * [基础](er-ci-kai-fa/ji-chu.md)
 * [会计](hui-ji.md)
