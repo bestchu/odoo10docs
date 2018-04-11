@@ -17,5 +17,13 @@
   * [基础](er-ci-kai-fa/ji-chu.md)
 * [会计](hui-ji.md)
   * [基础](hui-ji/ji-chu.md)
+
   * [会计知识](hui-ji/hui-ji-zhi-shi.md)
+* [采购](cai-gou.md)
+  * [概述](1.gai-shu.md)
+  * [采购](2.cai-gou.md)
+  * [补货](3.bu-huo.md)
+  * [问题集锦](4.wen-ti-ji-jin.md)
+    ​
+
 
