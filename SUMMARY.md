@@ -20,10 +20,10 @@
 
   * [会计知识](hui-ji/hui-ji-zhi-shi.md)
 * [采购](cai-gou.md)
-  * [概述](1.gai-shu.md)
-  * [采购](2.cai-gou.md)
-  * [补货](3.bu-huo.md)
-  * [问题集锦](4.wen-ti-ji-jin.md)
+  * [概述](cai-gou\1.gai-shu.md)
+  * [采购](cai-gou\2.cai-gou.md)
+  * [补货](cai-gou\3.bu-huo.md)
+  * [问题集锦](cai-gou\4.wen-ti-ji-jin.md)
     ​
 
 
