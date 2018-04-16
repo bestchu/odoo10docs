@@ -15,7 +15,7 @@ odoo模块开发以及相关技术入门介绍
 * 远程调试
 
 
->  补充：pip内网私服:http://center.tlrfid.tl/repository/pypi-public/simple，可直接将center.tlrfid.tl指向\*.32，也可设置DNS为\*.6，但不能直接直接用IP。
+>  补充：pip内网私服: http://center.tlrfid.tl/repository/pypi-public/simple  ，可直接将center.tlrfid.tl指向\*.32，也可设置DNS为\*.6，但不能直接直接用IP。
 
 ## 项目目录
 
@@ -44,6 +44,8 @@ odoo模块开发以及相关技术入门介绍
   * 包括`名称name`，描述description，`作者author`，作者网站地址website，`版本version`，`基础数据data`，演示数据demo，分类category，`依赖depends`，许可license，是否自动安装auto_install，是否为应用application，样式集css，是否可网页安装installable，钩子hook（pre_init_hook前执行、post_init_hook安装后和uninstall_hook卸载后）。
 
   > 文档：https://www.odoo.com/documentation/10.0/reference/module.html
+  >
+  > 中文文档：https://cdn.openerp.hk/modles
 
 * 静态资源static
   * 模块介绍及应用图标，除了可以在基本信息中添加以外，我们也可以这里也做详细的图文介绍等。
