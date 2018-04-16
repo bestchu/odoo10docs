@@ -2,7 +2,7 @@
 
 [官方资料](https://cdn.openerp.hk/sale)
 
-## 销售ODOO操作及业务流程
+## 操作及业务流程
 
 ![](./assets/ODOO销售操作流程.png)
 
