@@ -18,4 +18,6 @@
 * [会计](hui-ji.md)
   * [基础](hui-ji/ji-chu.md)
   * [会计知识](hui-ji/hui-ji-zhi-shi.md)
+* [销售](xiao-sou/xiao-sou.md)
+
 
