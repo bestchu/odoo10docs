@@ -238,7 +238,6 @@ odoo模块开发以及相关技术入门介绍
 
 ## 开发参考
 
-* [官方文档documentation](module.md)
 * [映射模型ORM](module.md)
 * [数据文件data](module.md)
 * [菜单menu](module.md)
@@ -246,3 +245,10 @@ odoo模块开发以及相关技术入门介绍
 * [视图views](module.md)
 * [模块module](module.md)
 * [命令行cmdline](module.md)
+* [控制器controllers](module.md)
+* [工作流workflow](module.md)
+* [安全机制security](module.md)
+* [报表report](module.md)
+* [基本继承inherit](module.md)
+* [官方文档documentation](module.md)
+* [案例example](module.md)
