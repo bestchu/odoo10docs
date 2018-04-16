@@ -15,6 +15,8 @@ odoo模块开发以及相关技术入门介绍
 * 远程调试
 
 
+>  补充：pip内网私服:http://center.tlrfid.tl/repository/pypi-public/simple，可直接将center.tlrfid.tl指向\*.32，也可设置DNS为\*.6，但不能直接直接用IP。
+
 ## 项目目录
 
 * addons
@@ -118,6 +120,113 @@ odoo模块开发以及相关技术入门介绍
 * 初始化信息init
 
   > 如：odoo/__init__.py，purchase/__init__.py
+
+## 文件命名
+
+* 常规命名
+
+  * models/*<main_model>*.py
+  * models/*<inherited_main_model>*.py
+  * views/*<main_model>*_templates.xml
+  * views/*<main_model>*_views.xml
+
+  >  如：sale_order_dates/sale_order.py |sale_order_views.xml
+  >
+  > account/models/account_journal_dashboard.py
+  >
+  > 文档：https://www.odoo.com/documentation/10.0/reference/guidelines.html#module-structure
+
+## XML文件
+
+*  一般格式
+
+  ```xml
+  <record id="view_id" model="ir.ui.view">
+      <field name="name">view.name</field>
+      <field name="model">object_name</field>
+      <field name="priority" eval="16"/>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="my_field_1"/>
+              <field name="my_field_2" string="My Label" widget="statusbar" statusbar_visible="draft,sent,progress,done" />
+          </tree>
+      </field>
+  </record>
+  ```
+
+* 精简格式|直接标签
+
+  * menuitem
+  * template
+  * report
+  * kanban
+
+* 继承与扩展
+
+  ```xml
+  <record id="inherited_model_view_form_inherit_my_module" model="ir.ui.view">
+      ...
+  </record>
+  ```
+
+## python一般规范
+
+* 尊重PEP8规范
+
+  * E501: line too long
+  * E301: expected 1 blank line, found 0
+  * E302: expected 2 blank lines, found 1
+  * E126: continuation line over-indented for hanging indent
+  * E123: closing bracket does not match indentation of opening bracket's line
+  * E127: continuation line over-indented for visual indent
+  * E128: continuation line under-indented for visual indent
+  * E265: block comment should start with '# '
+  * 建议尽量适应和统一Code style
+
+* 其他格式
+
+  * 编码头
+
+    ```python
+    # -*- coding: utf-8 -*-
+    ```
+
+  * 复制与克隆
+
+    ```python
+    # bad
+    new_dict = my_dict.clone()
+    new_list = old_list.clone()
+    # good
+    new_dict = dict(my_dict)
+    new_list = list(old_list)
+
+    ```
+
+  * 字典创建与更新
+
+    ```python
+    # -- creation with values
+    # bad
+    my_dict = {}
+    my_dict['foo'] = 3
+    my_dict['bar'] = 4
+    # good
+    my_dict = {'foo': 3, 'bar': 4}
+
+    # -- update dict
+    # bad
+    my_dict['foo'] = 3
+    my_dict['bar'] = 4
+    my_dict['baz'] = 5
+    # good
+    my_dict.update(foo=3, bar=4, baz=5)
+    my_dict = dict(my_dict, **my_dict2)
+    ```
+
+> 如：https://www.python.org/dev/peps/pep-0008/
+>
+> https://blog.csdn.net/ratsniper/article/details/78954852
 
 ## 源码了解
 
