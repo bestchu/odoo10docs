@@ -2,7 +2,7 @@ odoo模块开发以及相关技术入门介绍
 
 # odoo开发入门介绍
 
-##远程环境
+## 远程环境
 
 * 远程环境
 
@@ -15,7 +15,7 @@ odoo模块开发以及相关技术入门介绍
 * 远程调试
 
 
-##项目目录
+## 项目目录
 
 * addons
 
@@ -27,7 +27,7 @@ odoo模块开发以及相关技术入门介绍
 
   命令行直接加参数好像不支持自定义目录，需要定义odoo.conf。
 
-##模块构建
+## 模块构建
 
 ```
 #source ***venv/odoo/bin/python
@@ -36,7 +36,7 @@ odoo模块开发以及相关技术入门介绍
 
 如果是远程的话需要从远程同步下来。
 
-##模块目录
+## 模块目录
 
 * 基本信息manifest
   * 包括`名称name`，描述description，`作者author`，作者网站地址website，`版本version`，`基础数据data`，演示数据demo，分类category，`依赖depends`，许可license，是否自动安装auto_install，是否为应用application，样式集css，是否可网页安装installable，钩子hook（pre_init_hook前执行、post_init_hook安装后和uninstall_hook卸载后）。
@@ -127,7 +127,7 @@ odoo模块开发以及相关技术入门介绍
 * 销售模块sale
 * 自定义模块leave
 
-##开发参考
+## 开发参考
 
 * [官方文档documentation](module.md)
 * [映射模型ORM](module.md)
