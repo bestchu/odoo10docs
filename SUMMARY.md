@@ -13,11 +13,22 @@
 * [库存](ku-cun.md)
   * [仓库管理的基本概念和引导](ku-cun/cang-ku-guan-li-yin-dao.md)
   * [仓库管理系统（WMS）](ku-cun/cang-ku-guan-li-xi-tong-ff08-wms.md)
-* [二次开发](er-ci-kai-fa.md)
-  * [基础](er-ci-kai-fa/ji-chu.md)
+* [二次开发](developer-doc)
+  * [远程环境](developer-doc)
+  * [项目目录](developer-doc)
+  * [模块构建](developer-doc)
+  * [模块目录](developer-doc)
+  * [源码了解](developer-doc)
+  * [开发参考](developer-doc/module.md)
 * [会计](hui-ji.md)
   * [基础](hui-ji/ji-chu.md)
+
   * [会计知识](hui-ji/hui-ji-zhi-shi.md)
 * [销售](xiao-sou/xiao-sou.md)
-
+* [采购](cai-gou.md)
+  * [概述](cai-gou\1.gai-shu.md)
+  * [采购](cai-gou\2.cai-gou.md)
+  * [补货](cai-gou\3.bu-huo.md)
+  * [问题集锦](cai-gou\4.wen-ti-ji-jin.md)
+    ​
 
