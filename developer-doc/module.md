@@ -371,40 +371,37 @@
 * 编辑映射模型
 
   ```python
-    # -*- coding: utf-8 -*-
-
     from odoo import models, fields, api
 
+  class Leave(models.Model):
+      _name = 'leave.leave'
+      title = fields.Char(string='title', required=True)
+      person = fields.Char(string='person', required=True)
+      days = fields.Integer(string='days', default=1)
+      start_date = fields.Date(string='start date')
+      description = fields.Text(string='description')
+      money = fields.Float(string='money', compute="_money", store=False)
 
-    class Leave(models.Model):
-        _name = 'leave.leave'
-        title = fields.Char(string='title', required=True)
-        person = fields.Char(string='person', required=True)
-        days = fields.Integer(string='days', default=1)
-        start_date = fields.Date(string='start date')
-        description = fields.Text(string='description')
-        money = fields.Float(string='money', compute="_money", store=False)
-
-        @api.depends('days')
-        def _money(self):
-            self.money = float(self.days) * 100
-      
-        WORKFLOW_STATE_SELECTION = [
-            ('draft', 'Draft'),
-            ('confirm', 'Confirm'),
-            ('done', 'Done'),
-        ]
-        state = fields.Selection(WORKFLOW_STATE_SELECTION, default='draft', string="state", readonly=True)
-      
-        @api.multi
-        def action_confirm(self):
-            self.state = 'confirm'
-            return True
-      
-        @api.multi
-        def action_done(self):
-            self.state = 'done'
-            return True
+      @api.depends('days')
+      def _money(self):
+          self.money = float(self.days) * 100
+    
+      WORKFLOW_STATE_SELECTION = [
+          ('draft', 'Draft'),
+          ('confirm', 'Confirm'),
+          ('done', 'Done'),
+      ]
+      state = fields.Selection(WORKFLOW_STATE_SELECTION, default='draft', string="state", readonly=True)
+    
+      @api.multi
+      def action_confirm(self):
+          self.state = 'confirm'
+          return True
+    
+      @api.multi
+      def action_done(self):
+          self.state = 'done'
+          return True
   ```
 
 * 编辑基础数据
@@ -531,8 +528,6 @@
           </record>
   ```
 
-  ​
-
   * `编辑Search视图`
 
   ```xml
@@ -547,8 +542,6 @@
               </field>
           </record>
   ```
-
-  ​
 
 * 编辑动作
 
