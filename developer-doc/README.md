@@ -240,7 +240,7 @@ odoo模块开发以及相关技术入门介绍
 
 ## 开发参考
 
-* [映射模型ORM](module.md)
+* [映射模型ORM](/developer-doc/module.md)
 * [数据文件data](module.md)
 * [菜单menu](module.md)
 * [动作actions](module.md)
