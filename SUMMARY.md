@@ -19,7 +19,7 @@
   * [模块构建](developer-doc/README.md)
   * [模块目录](developer-doc/README.md)
   * [源码了解](developer-doc/README.md)
-  * [开发参考](developer-doc/module.md/README.md)
+  * [开发参考](developer-doc/README.md)
 * [会计](hui-ji.md)
   * [基础](hui-ji/ji-chu.md)
 
