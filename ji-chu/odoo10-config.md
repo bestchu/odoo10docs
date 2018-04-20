@@ -117,6 +117,8 @@ xmlrpc_interface =
 ; XML-RPC协议使用的TCP端口  
 xmlrpc_port = 8069  
 ; 是否允许使用XML-RPC安全协议，默认为True  
-xmlrpcs = True; 指定使用XML-RPC安全协议的IP地址，为空时表示绑定到现有IPxmlrpcs_interface = ; XML-RPC安全协议使用的TCP端口xmlrpcs_port = 8071  
+xmlrpcs = True; 指定使用XML-RPC安全协议的IP地址，为空时表示绑定到现有IPxmlrpcs_interface = ; XML-RPC安全协议使用的TCP端口xmlrpcs_port = 8071
 ```
+
+
 
