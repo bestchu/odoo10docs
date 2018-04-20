@@ -20,9 +20,9 @@
   * [模块目录](developer-doc/README.md)
   * [源码了解](developer-doc/README.md)
   * [开发参考](developer-doc/README.md)
+  * [自定义打印报表](developer-doc/zi-ding-yi-da-yin-bao-biao.md)
 * [会计](hui-ji.md)
   * [基础](hui-ji/ji-chu.md)
-
   * [会计知识](hui-ji/hui-ji-zhi-shi.md)
 * [销售](xiao-sou/xiao-sou.md)
   * [操作及业务流程](xiao-sou/xiao-sou.md)
@@ -38,3 +38,4 @@
   * [采购](cai-gou\2.cai-gou.md)
   * [补货](cai-gou\3.bu-huo.md)
   * [问题集锦](cai-gou\4.wen-ti-ji-jin.md)
+
