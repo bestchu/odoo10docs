@@ -103,7 +103,21 @@ ODOO中文社区：[http://odoo.net.cn/](http://odoo.net.cn/)
 
 ![doo-versio](../assets/ji-chu/odoo-version.png)
 
+odoo 8 重写了仓库，odoo 9 重写了财务， odoo 10 重写了生产
 
+最新odoo11.0，功能上有一定精简（去除财务模块，去除工作流支持），技术上变动较大（代码逐步迁移至Python3，前端框架改写得抽象）。
+
+所以如果是从生产使用的角度来讲，odoo10.0是当前最好选择，因为其更稳定，第三方模块也更多更全面。
+
+而如果是ODOO技术爱好从业者，则逐步迁移至odoo11.0也有必要，因为其底层技术架构变动较大。
+
+odoo8.0是最后一个ODOO全功能版本，如果注重生产模块功能，且购买企业版预算不足，仍旧使用8.0也是个较好选择。
+
+业内现状也是：多数ERP系统在选用一个版本后，运行十几年的（如用友U8）也比比皆是 .
+
+[odoo8和9版本对比](http://blog.sina.com.cn/s/blog_7cb52fa80102vrga.html)
+
+[odoo10社区版和企业版区别](http://www.jointd.com/?p=3194)
 
 # odoo10默认安装模块
 
